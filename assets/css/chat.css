@@ -1,0 +1,289 @@
+/**
+ * Estilos do Chat - BuddyBoss Tutores IA
+ * 
+ * @package BB_Tutor_IA
+ * @since 1.0.0
+ */
+
+/* Wrapper da Aba */
+.bb-tutor-tab-wrapper {
+  padding: 20px;
+}
+
+.bb-tutor-description {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f0f0f1;
+  border-left: 4px solid #007cba;
+  border-radius: 4px;
+}
+
+.bb-tutor-description p {
+  margin: 0;
+  color: #1d2327;
+  line-height: 1.6;
+}
+
+.bb-tutor-chat-container {
+  height: 600px;
+  max-width: 100%;
+}
+
+/* Container do Chat */
+.bb-tutor-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bb-tutor-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f9f9f9;
+  scroll-behavior: smooth;
+}
+
+.bb-tutor-welcome-message {
+  padding: 15px;
+  background: #e7f3ff;
+  border-left: 4px solid #007cba;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.bb-tutor-welcome-message p {
+  margin: 0;
+  color: #1d2327;
+  line-height: 1.6;
+}
+
+.bb-tutor-message {
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.bb-tutor-message-user {
+  background: #007cba;
+  color: #fff;
+  margin-left: auto;
+  text-align: right;
+}
+
+.bb-tutor-message-assistant {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.bb-tutor-message-error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.bb-tutor-message-content {
+  line-height: 1.5;
+}
+
+.bb-tutor-citations {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.bb-tutor-citations strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.95em;
+}
+
+.bb-tutor-citations ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.bb-tutor-citations li {
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.bb-tutor-citations a {
+  color: #007cba;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.bb-tutor-citations a:hover {
+  text-decoration: underline;
+}
+
+.bb-tutor-citations .citation-range {
+  font-size: 0.85em;
+  color: #999;
+  font-style: italic;
+}
+
+.bb-tutor-no-context {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #fff3cd;
+  border-left: 3px solid #ffc107;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.bb-tutor-no-context em {
+  color: #856404;
+  font-style: normal;
+}
+
+.bb-tutor-input {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.bb-tutor-input textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+  font-family: inherit;
+  min-height: 60px;
+  max-height: 150px;
+}
+
+.bb-tutor-input button {
+  padding: 10px 20px;
+  background: #007cba;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.bb-tutor-input button:hover {
+  background: #005a87;
+}
+
+.bb-tutor-input button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.bb-tutor-loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #f0f0f1;
+  border-radius: 8px;
+  max-width: 80%;
+  margin-bottom: 15px;
+}
+
+.bb-tutor-loading-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ddd;
+  border-top-color: #007cba;
+  border-radius: 50%;
+  animation: bb-tutor-spin 0.8s linear infinite;
+}
+
+@keyframes bb-tutor-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bb-tutor-loading-text {
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .bb-tutor-tab-wrapper {
+    padding: 10px;
+  }
+
+  .bb-tutor-chat-container {
+    height: 500px;
+  }
+
+  .bb-tutor-message {
+    max-width: 90%;
+  }
+
+  .bb-tutor-input {
+    flex-direction: column;
+  }
+
+  .bb-tutor-input textarea {
+    min-height: 80px;
+  }
+
+  .bb-tutor-input button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .bb-tutor-messages {
+    padding: 15px;
+  }
+
+  .bb-tutor-welcome-message {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bb-tutor-tab-wrapper {
+    padding: 5px;
+  }
+
+  .bb-tutor-chat-container {
+    height: 450px;
+  }
+
+  .bb-tutor-message {
+    max-width: 95%;
+    padding: 10px 12px;
+    font-size: 0.95em;
+  }
+
+  .bb-tutor-messages {
+    padding: 10px;
+  }
+
+  .bb-tutor-input {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .bb-tutor-input textarea {
+    font-size: 16px; /* Previne zoom no iOS */
+  }
+
+  .bb-tutor-description {
+    padding: 12px;
+    font-size: 0.95em;
+  }
+}

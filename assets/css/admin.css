@@ -1,0 +1,1358 @@
+/**
+ * Estilos do Admin - BuddyBoss Tutores IA
+ * 
+ * @package BB_Tutor_IA
+ * @since 1.0.0
+ */
+
+.bb-tutor-admin-section {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.bb-tutor-admin-section h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.bb-tutor-form-field {
+  margin-bottom: 20px;
+}
+
+.bb-tutor-form-field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.bb-tutor-form-field input[type="text"],
+.bb-tutor-form-field textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.bb-tutor-form-field textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.bb-tutor-form-field .description {
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.bb-tutor-file-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.bb-tutor-file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.bb-tutor-file-info {
+  flex: 1;
+}
+
+.bb-tutor-file-name {
+  font-weight: 600;
+}
+
+.bb-tutor-file-date {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.bb-tutor-file-actions button {
+  padding: 5px 10px;
+  background: #dc3232;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.bb-tutor-file-actions button:hover {
+  background: #a00;
+}
+
+.bb-tutor-upload-area {
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.bb-tutor-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.bb-tutor-stat-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  border-left: 4px solid #007cba;
+}
+
+.bb-tutor-stat-label {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.bb-tutor-stat-value {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333;
+}
+
+.bb-tutor-notice {
+  padding: 10px 15px;
+  border-left: 4px solid #007cba;
+  background: #e5f5fa;
+  margin: 15px 0;
+}
+
+.bb-tutor-notice.error {
+  border-left-color: #dc3232;
+  background: #fef7f7;
+}
+
+.bb-tutor-notice.success {
+  border-left-color: #46b450;
+  background: #f7fef7;
+}
+
+/* Estilos da Página de Configurações */
+.bb-tutor-admin-wrap {
+  max-width: 1200px;
+}
+
+.bb-tutor-admin-wrap h1 {
+  margin-bottom: 20px;
+}
+
+.bb-tutor-settings-form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  margin-top: 20px;
+}
+
+.bb-tutor-settings-form h2 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bb-tutor-settings-form table {
+  margin-top: 20px;
+}
+
+.bb-tutor-settings-form .form-table th {
+  padding: 20px 10px 20px 0;
+  width: 200px;
+}
+
+.bb-tutor-settings-form .form-table td {
+  padding: 15px 10px;
+}
+
+.bb-tutor-toggle-key {
+  margin-left: 10px;
+}
+
+.bb-tutor-info-box {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+  margin-top: 20px;
+}
+
+.bb-tutor-info-box h2,
+.bb-tutor-info-box h3 {
+  margin-top: 0;
+  color: #23282d;
+}
+
+.bb-tutor-info-box h3 {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.bb-tutor-info-box ol {
+  padding-left: 20px;
+}
+
+.bb-tutor-info-box ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.bb-tutor-info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bb-tutor-info-box ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bb-tutor-info-box ul li:last-child {
+  border-bottom: none;
+}
+
+.bb-tutor-info-box a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.bb-tutor-info-box a:hover {
+  color: #005177;
+  text-decoration: underline;
+}
+
+/* Estilos para notices customizados */
+.bb-tutor-admin-wrap .notice {
+  margin: 15px 0;
+  padding: 12px;
+}
+
+.bb-tutor-admin-wrap .notice .dashicons {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.bb-tutor-admin-wrap .notice p {
+  margin: 0.5em 0;
+  font-size: 14px;
+}
+
+/* Estilos para campos de formulário */
+.bb-tutor-admin-wrap input[type="password"],
+.bb-tutor-admin-wrap input[type="text"],
+.bb-tutor-admin-wrap input[type="number"] {
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.bb-tutor-admin-wrap .regular-text {
+  width: 400px;
+}
+
+.bb-tutor-admin-wrap .small-text {
+  width: 60px;
+}
+
+.bb-tutor-admin-wrap .description {
+  color: #646970;
+  font-size: 13px;
+  font-style: normal;
+  margin-top: 5px;
+  display: block;
+}
+
+.bb-tutor-admin-wrap .description code {
+  background: #f0f0f1;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* Estilos para botões */
+.bb-tutor-admin-wrap .button-primary {
+  background: #2271b1;
+  border-color: #2271b1;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.bb-tutor-admin-wrap .button-primary:hover {
+  background: #135e96;
+  border-color: #135e96;
+}
+
+/* Estilos para validação de API Key */
+.bb-tutor-api-key-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.bb-tutor-api-key-status {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.bb-tutor-api-key-status .dashicons {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.bb-tutor-api-key-status.validating {
+  color: #f0b849;
+}
+
+.bb-tutor-api-key-status.valid {
+  color: #46b450;
+}
+
+.bb-tutor-api-key-status.invalid {
+  color: #dc3232;
+}
+
+/* Estados de loading */
+.bb-tutor-loading {
+  opacity: 0.6;
+  pointer-events: none;
+  position: relative;
+}
+
+.bb-tutor-loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #2271b1;
+  border-radius: 50%;
+  animation: bb-tutor-spin 1s linear infinite;
+}
+
+@keyframes bb-tutor-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Transições suaves */
+.bb-tutor-admin-wrap input[type="text"],
+.bb-tutor-admin-wrap input[type="password"],
+.bb-tutor-admin-wrap input[type="number"],
+.bb-tutor-admin-wrap textarea,
+.bb-tutor-admin-wrap select,
+.bb-tutor-admin-wrap .button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Estados de foco melhorados para acessibilidade */
+.bb-tutor-admin-wrap input[type="text"]:focus,
+.bb-tutor-admin-wrap input[type="password"]:focus,
+.bb-tutor-admin-wrap input[type="number"]:focus,
+.bb-tutor-admin-wrap textarea:focus {
+  border-color: #2271b1;
+  box-shadow: 0 0 0 1px #2271b1;
+  outline: none;
+}
+
+.bb-tutor-admin-wrap .button:focus {
+  border-color: #0a4b78;
+  box-shadow: 0 0 0 1px #0a4b78;
+  outline: 2px solid transparent;
+  outline-offset: 0;
+}
+
+/* Estilos para campos com erro */
+.bb-tutor-admin-wrap input.error,
+.bb-tutor-admin-wrap textarea.error {
+  border-color: #dc3232;
+}
+
+.bb-tutor-admin-wrap .error-message {
+  color: #dc3232;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Estilos para campos com sucesso */
+.bb-tutor-admin-wrap input.success,
+.bb-tutor-admin-wrap textarea.success {
+  border-color: #46b450;
+}
+
+.bb-tutor-admin-wrap .success-message {
+  color: #46b450;
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Melhorias nos botões */
+.bb-tutor-admin-wrap .button {
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.bb-tutor-admin-wrap .button:active {
+  transform: translateY(1px);
+}
+
+.bb-tutor-admin-wrap .button:disabled,
+.bb-tutor-admin-wrap .button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.bb-tutor-toggle-key:hover {
+  background-color: #f0f0f1;
+}
+
+/* Estilos para tooltips */
+.bb-tutor-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+}
+
+.bb-tutor-tooltip .dashicons {
+  color: #646970;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.bb-tutor-tooltip:hover .dashicons {
+  color: #2271b1;
+}
+
+/* Melhorias na área de upload */
+.bb-tutor-upload-area:hover {
+  border-color: #2271b1;
+  background: #f0f6fc;
+}
+
+.bb-tutor-upload-area.dragging {
+  border-color: #2271b1;
+  background: #e5f5fa;
+  border-style: solid;
+}
+
+/* Estilos para progresso de upload */
+.bb-tutor-upload-progress {
+  width: 100%;
+  height: 4px;
+  background: #f0f0f1;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.bb-tutor-upload-progress-bar {
+  height: 100%;
+  background: #2271b1;
+  transition: width 0.3s ease;
+}
+
+/* Melhorias nos itens de arquivo */
+.bb-tutor-file-item {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.bb-tutor-file-item:hover {
+  background: #f0f0f1;
+  border-color: #c3c4c7;
+}
+
+.bb-tutor-file-actions button:focus {
+  outline: 2px solid #dc3232;
+  outline-offset: 2px;
+}
+
+/* Melhorias nas estatísticas */
+.bb-tutor-stat-box {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bb-tutor-stat-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para badges */
+.bb-tutor-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+  background: #f0f0f1;
+  color: #50575e;
+}
+
+.bb-tutor-badge.success {
+  background: #d5f4d6;
+  color: #1e4620;
+}
+
+.bb-tutor-badge.error {
+  background: #fce8e8;
+  color: #8b0000;
+}
+
+.bb-tutor-badge.warning {
+  background: #fef8e6;
+  color: #8b6914;
+}
+
+.bb-tutor-badge.info {
+  background: #e5f5fa;
+  color: #135e96;
+}
+
+/* Estilos para tabelas de dados */
+.bb-tutor-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #c3c4c7;
+}
+
+.bb-tutor-data-table th,
+.bb-tutor-data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.bb-tutor-data-table th {
+  background: #f6f7f7;
+  font-weight: 600;
+  color: #1d2327;
+}
+
+.bb-tutor-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.bb-tutor-data-table tr:hover {
+  background: #f6f7f7;
+}
+
+/* Estilos para seções colapsáveis */
+.bb-tutor-collapsible-header {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: #f6f7f7;
+  border: 1px solid #c3c4c7;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.bb-tutor-collapsible-header:hover {
+  background: #f0f0f1;
+}
+
+.bb-tutor-collapsible-header .dashicons {
+  transition: transform 0.2s ease;
+}
+
+.bb-tutor-collapsible-header.collapsed .dashicons {
+  transform: rotate(-90deg);
+}
+
+.bb-tutor-collapsible-content {
+  padding: 15px;
+  border: 1px solid #c3c4c7;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.bb-tutor-collapsible-content.hidden {
+  display: none;
+}
+
+/* Estilos para mensagens inline */
+.bb-tutor-inline-message {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.bb-tutor-inline-message .dashicons {
+  margin-right: 6px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.bb-tutor-inline-message.info {
+  background: #e5f5fa;
+  color: #135e96;
+}
+
+.bb-tutor-inline-message.success {
+  background: #d5f4d6;
+  color: #1e4620;
+}
+
+.bb-tutor-inline-message.warning {
+  background: #fef8e6;
+  color: #8b6914;
+}
+
+.bb-tutor-inline-message.error {
+  background: #fce8e8;
+  color: #8b0000;
+}
+
+/* Responsividade */
+@media screen and (max-width: 782px) {
+  .bb-tutor-admin-wrap .regular-text {
+    width: 100%;
+  }
+
+  .bb-tutor-settings-form .form-table th,
+  .bb-tutor-settings-form .form-table td {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .bb-tutor-settings-form .form-table th {
+    padding-bottom: 5px;
+  }
+
+  .bb-tutor-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .bb-tutor-file-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bb-tutor-file-actions {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .bb-tutor-file-actions button {
+    width: 100%;
+  }
+
+  .bb-tutor-toggle-key {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+  }
+}
+
+/* Modo escuro (se o WordPress tiver tema escuro ativo) */
+@media (prefers-color-scheme: dark) {
+  .bb-tutor-admin-section,
+  .bb-tutor-settings-form,
+  .bb-tutor-info-box {
+    background: #1d2327;
+    border-color: #3c434a;
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-admin-section h3,
+  .bb-tutor-info-box h2,
+  .bb-tutor-info-box h3 {
+    color: #f0f0f1;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-form-field input[type="text"],
+  .bb-tutor-form-field input[type="password"],
+  .bb-tutor-form-field textarea {
+    background: #2c3338;
+    border-color: #3c434a;
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-file-item,
+  .bb-tutor-stat-box,
+  .bb-tutor-upload-area {
+    background: #2c3338;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-collapsible-header {
+    background: #2c3338;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-collapsible-header:hover {
+    background: #32373c;
+  }
+
+  .bb-tutor-data-table {
+    background: #1d2327;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-data-table th {
+    background: #2c3338;
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-data-table tr:hover {
+    background: #2c3338;
+  }
+}
+
+/* Estilos para Seção de Upload de Documentos do Tutor */
+.bb-tutor-files-section {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #ddd;
+}
+
+.bb-tutor-files-section h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #23282d;
+}
+
+.bb-tutor-files-section h5 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #23282d;
+}
+
+/* Área de Upload */
+.bb-tutor-upload-area {
+  background: #fafafa;
+  border: 2px dashed #c3c4c7;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.bb-tutor-upload-area:hover {
+  border-color: #2271b1;
+  background: #f0f6fc;
+}
+
+.bb-tutor-upload-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.bb-tutor-upload-controls .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #2c3338;
+  background: #f0f0f1;
+  border-color: #0a4b78;
+}
+
+.bb-tutor-upload-controls .button:hover {
+  background: #fff;
+  border-color: #0a4b78;
+  color: #0a4b78;
+}
+
+.bb-tutor-upload-controls .dashicons {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.bb-tutor-selected-file {
+  color: #ffffff;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.bb-tutor-selected-file:not(:empty) {
+  padding: 5px 10px;
+  background: #fff;
+  border: 1px solid #c3c4c7;
+  border-radius: 4px;
+}
+
+/* Informações de Upload */
+.bb-tutor-upload-info {
+  margin: 15px 0;
+}
+
+.bb-tutor-upload-info .description {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.bb-tutor-upload-info .description strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #1d2327;
+}
+
+/* Status de Upload */
+.bb-tutor-upload-status {
+  margin-top: 15px;
+  display: none;
+}
+
+.bb-tutor-upload-status.active {
+  display: block;
+}
+
+.bb-tutor-upload-progress {
+  margin-bottom: 10px;
+}
+
+.bb-tutor-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #f0f0f1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.bb-tutor-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2271b1 0%, #135e96 100%);
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.bb-tutor-progress-text {
+  display: block;
+  font-size: 13px;
+  color: #646970;
+  text-align: center;
+}
+
+/* Mensagens de Upload */
+.bb-tutor-upload-messages {
+  margin-top: 15px;
+}
+
+.bb-tutor-upload-message {
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.bb-tutor-upload-message .dashicons {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.bb-tutor-upload-message.success {
+  background: #d5f4d6;
+  color: #1e4620;
+  border-left: 4px solid #46b450;
+}
+
+.bb-tutor-upload-message.error {
+  background: #fce8e8;
+  color: #8b0000;
+  border-left: 4px solid #dc3232;
+}
+
+.bb-tutor-upload-message.info {
+  background: #e5f5fa;
+  color: #135e96;
+  border-left: 4px solid #2271b1;
+}
+
+/* Lista de Arquivos */
+.bb-tutor-files-list-container {
+  margin-top: 25px;
+}
+
+.bb-tutor-files-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #c3c4c7;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bb-tutor-files-table thead {
+  background: #f6f7f7;
+}
+
+.bb-tutor-files-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #1d2327;
+  font-size: 13px;
+  border-bottom: 2px solid #c3c4c7;
+}
+
+.bb-tutor-files-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f1;
+  font-size: 13px;
+  color: #2c3338;
+}
+
+.bb-tutor-files-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.bb-tutor-files-table tbody tr:hover {
+  background: #f6f7f7;
+}
+
+.bb-tutor-files-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.bb-tutor-files-table .file-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.bb-tutor-files-table .file-name .dashicons {
+  color: #646970;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+.bb-tutor-files-table .file-date {
+  color: #646970;
+}
+
+.bb-tutor-files-table .file-actions {
+  text-align: right;
+}
+
+.bb-tutor-files-table .bb-tutor-delete-file {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  font-size: 13px;
+  background: #fff;
+  border: 1px solid #dc3232;
+  color: #dc3232;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bb-tutor-files-table .bb-tutor-delete-file:hover {
+  background: #dc3232;
+  color: #fff;
+}
+
+.bb-tutor-files-table .bb-tutor-delete-file:focus {
+  outline: 2px solid #dc3232;
+  outline-offset: 2px;
+}
+
+.bb-tutor-files-table .bb-tutor-delete-file .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.bb-tutor-files-table .bb-tutor-delete-file:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Estado de Exclusão */
+.bb-tutor-files-table tr.deleting {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Sem Arquivos */
+.bb-tutor-no-files {
+  padding: 20px;
+  text-align: center;
+  background: #f6f7f7;
+  border: 1px solid #c3c4c7;
+  border-radius: 4px;
+}
+
+.bb-tutor-no-files .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  color: #646970;
+}
+
+.bb-tutor-no-files .dashicons {
+  color: #2271b1;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Drag and Drop */
+.bb-tutor-upload-area.dragging {
+  border-color: #2271b1;
+  border-style: solid;
+  background: #e5f5fa;
+}
+
+.bb-tutor-upload-area.dragging::before {
+  content: "Solte o arquivo aqui";
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  color: #2271b1;
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 782px) {
+  .bb-tutor-upload-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bb-tutor-upload-controls .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bb-tutor-selected-file {
+    width: 100%;
+  }
+
+  .bb-tutor-files-table {
+    font-size: 12px;
+  }
+
+  .bb-tutor-files-table th,
+  .bb-tutor-files-table td {
+    padding: 10px;
+  }
+
+  .bb-tutor-files-table .file-name {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .bb-tutor-files-table .file-actions {
+    text-align: left;
+  }
+
+  .bb-tutor-files-table .bb-tutor-delete-file {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Animações */
+@keyframes bb-tutor-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bb-tutor-upload-message {
+  animation: bb-tutor-fade-in 0.3s ease;
+}
+
+@keyframes bb-tutor-slide-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+.bb-tutor-files-table tr.removing {
+  animation: bb-tutor-slide-out 0.3s ease forwards;
+}
+
+/* Estados de Loading */
+.bb-tutor-upload-area.uploading {
+  pointer-events: none;
+  opacity: 0.7;
+  position: relative;
+}
+
+.bb-tutor-upload-area.uploading::before {
+  content: "Enviando arquivo...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  color: #2271b1;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bb-tutor-upload-area.uploading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 80px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #2271b1;
+  border-radius: 50%;
+  animation: bb-tutor-spin 1s linear infinite;
+  z-index: 11;
+}
+
+/* Modo Escuro */
+@media (prefers-color-scheme: dark) {
+  .bb-tutor-files-section h4,
+  .bb-tutor-files-section h5 {
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-upload-area {
+    background: #2c3338;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-upload-area:hover {
+    border-color: #2271b1;
+    background: #32373c;
+  }
+
+  .bb-tutor-selected-file:not(:empty) {
+    background: #1d2327;
+    border-color: #3c434a;
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-progress-bar {
+    background: #3c434a;
+  }
+
+  .bb-tutor-files-table {
+    background: #1d2327;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-files-table thead {
+    background: #2c3338;
+  }
+
+  .bb-tutor-files-table th {
+    color: #f0f0f1;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-files-table td {
+    color: #f0f0f1;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-files-table tbody tr:hover {
+    background: #2c3338;
+  }
+
+  .bb-tutor-files-table .file-name .dashicons,
+  .bb-tutor-files-table .file-date {
+    color: #a7aaad;
+  }
+
+  .bb-tutor-files-table .bb-tutor-delete-file {
+    background: #2c3338;
+    border-color: #dc3232;
+  }
+
+  .bb-tutor-no-files {
+    background: #2c3338;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-no-files .description {
+    color: #a7aaad;
+  }
+}
+
+/* Estilos para Seção de Estatísticas */
+.bb-tutor-stats {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f6f7f7;
+  border: 1px solid #c3c4c7;
+  border-radius: 4px;
+}
+
+.bb-tutor-stats h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #1d2327;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.bb-tutor-stats-content p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #2c3338;
+}
+
+.bb-tutor-stats-content strong {
+  display: inline-block;
+  min-width: 140px;
+  color: #1d2327;
+}
+
+.bb-tutor-usage-count,
+.bb-tutor-last-used {
+  font-weight: 600;
+  color: #2271b1;
+}
+
+.bb-tutor-stats-actions {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.bb-tutor-reset-stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 14px;
+  font-size: 13px;
+  background: #fff;
+  border: 1px solid #c3c4c7;
+  color: #2c3338;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bb-tutor-reset-stats:hover {
+  background: #f6f7f7;
+  border-color: #a7aaad;
+}
+
+.bb-tutor-reset-stats:focus {
+  outline: 2px solid #2271b1;
+  outline-offset: 2px;
+}
+
+.bb-tutor-reset-stats .dashicons {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.bb-tutor-reset-stats:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Modo Escuro para Estatísticas */
+@media (prefers-color-scheme: dark) {
+  .bb-tutor-stats {
+    background: #2c3338;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-stats h4 {
+    color: #f0f0f1;
+    border-color: #3c434a;
+  }
+
+  .bb-tutor-stats-content p {
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-stats-content strong {
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-reset-stats {
+    background: #1d2327;
+    border-color: #3c434a;
+    color: #f0f0f1;
+  }
+
+  .bb-tutor-reset-stats:hover {
+    background: #32373c;
+    border-color: #50575e;
+  }
+}

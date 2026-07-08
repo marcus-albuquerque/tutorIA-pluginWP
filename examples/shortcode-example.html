@@ -1,0 +1,110 @@
+<!-- 
+    Exemplo de Uso do Shortcode [tutor_ia]
+    
+    Este arquivo demonstra como usar o shortcode em diferentes contextos.
+    Copie e cole os exemplos abaixo em páginas ou posts do WordPress.
+-->
+
+<!-- EXEMPLO 1: Uso Básico -->
+<h2>Chat do Tutor IA - Matemática</h2>
+<p>Tire suas dúvidas sobre o conteúdo da disciplina:</p>
+[tutor_ia group_id="123"]
+
+<!-- EXEMPLO 2: Com Altura Customizada -->
+<h2>Tutor IA - Programação</h2>
+<div style="margin: 20px 0">[tutor_ia group_id="456" height="800px"]</div>
+
+<!-- EXEMPLO 3: Em Layout de Duas Colunas -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+  <div>
+    <h3>Conteúdo da Aula</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+  <div>
+    <h3>Pergunte ao Tutor</h3>
+    [tutor_ia group_id="789" height="500px"]
+  </div>
+</div>
+
+<!-- EXEMPLO 4: Em Página Full Width -->
+<div style="max-width: 1200px; margin: 0 auto">
+  <h1>Central de Ajuda - Física Quântica</h1>
+  <p>Nosso tutor IA está disponível 24/7 para responder suas dúvidas:</p>
+  [tutor_ia group_id="101" height="90vh"]
+</div>
+
+<!-- EXEMPLO 5: Com Instruções -->
+<div class="tutor-section">
+  <h2>Como usar o Tutor IA</h2>
+  <ul>
+    <li>Digite sua pergunta no campo de texto</li>
+    <li>Pressione Enter ou clique em "Enviar"</li>
+    <li>O tutor responderá com base nos materiais da disciplina</li>
+    <li>Você pode ver as fontes citadas abaixo de cada resposta</li>
+  </ul>
+
+  [tutor_ia group_id="202"]
+</div>
+
+<!-- EXEMPLO 6: Múltiplos Tutores na Mesma Página -->
+<h2>Tutores Disponíveis</h2>
+
+<div style="margin-bottom: 40px">
+  <h3>Tutor de Matemática</h3>
+  [tutor_ia group_id="301" height="400px"]
+</div>
+
+<div style="margin-bottom: 40px">
+  <h3>Tutor de Física</h3>
+  [tutor_ia group_id="302" height="400px"]
+</div>
+
+<!-- EXEMPLO 7: Em Sidebar (Widget de Texto) -->
+<div class="widget">
+  <h4>Ajuda Rápida</h4>
+  [tutor_ia group_id="401" height="300px"]
+</div>
+
+<!-- EXEMPLO 8: Com Tabs (usando plugin de tabs) -->
+[tabs] [tab title="Conteúdo"]
+<p>Material da aula...</p>
+[/tab] [tab title="Tutor IA"] [tutor_ia group_id="501" height="600px"] [/tab]
+[/tabs]
+
+<!-- EXEMPLO 9: Responsivo com Media Queries -->
+<style>
+  .responsive-tutor {
+    height: 600px;
+  }
+
+  @media (max-width: 768px) {
+    .responsive-tutor {
+      height: 500px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .responsive-tutor {
+      height: 400px;
+    }
+  }
+</style>
+
+<div class="responsive-tutor">[tutor_ia group_id="601"]</div>
+
+<!-- EXEMPLO 10: Em Modal/Popup (usando plugin de modal) -->
+<button onclick="openTutorModal()">Abrir Tutor IA</button>
+
+[modal id="tutor-modal"]
+<h3>Chat com o Tutor</h3>
+[tutor_ia group_id="701" height="500px"] [/modal]
+
+<!-- 
+    NOTAS IMPORTANTES:
+    
+    1. Substitua os group_id pelos IDs reais dos seus grupos
+    2. Certifique-se de que o tutor está ativo no grupo
+    3. O usuário precisa ser membro do grupo para acessar
+    4. Os assets CSS e JS são carregados automaticamente
+    5. Múltiplos shortcodes funcionam independentemente
+-->

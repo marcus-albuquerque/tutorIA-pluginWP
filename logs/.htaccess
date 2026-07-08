@@ -1,0 +1,3 @@
+# Proteger logs do BuddyBoss Tutores IA
+Order deny,allow
+Deny from all
